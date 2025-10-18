@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'THICCCBOI-Regular';
+  src: url('fonts/THICCCBOI-Regular.woff2') format('woff2'),
+      url('fonts/THICCCBOI-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'THICCCBOI-Medium';
+  src: url('fonts/THICCCBOI-Medium.woff2') format('woff2'),
+      url('fonts/THICCCBOI-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'THICCCBOI-SemiBold';
+  src: url('fonts/THICCCBOI-SemiBold.woff2') format('woff2'),
+      url('fonts/THICCCBOI-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'THICCCBOI-Bold';
+  src: url('fonts/THICCCBOI-Bold.woff2') format('woff2'),
+      url('fonts/THICCCBOI-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@theme {
+
+  /* Default breakpoints in use with min width in px: */
+  /* 640px */
+  --breakpoint-sm: 40rem;
+
+  /* 768px */
+  --breakpoint-md: 48rem;
+
+  /* 1024px */
+  --breakpoint-lg: 64rem;
+
+  /* 1280px */
+  --breakpoint-xl: 80rem;
+
+  /* 1536px */
+  --breakpoint-2xl: 96rem;
+
+
+  /* Added breakpoints with min width in px: */
+  /* 1920px */
+  --breakpoint-3xl: 120rem;
+}
+
+:root {
+  --THICCCBOI-Regular: 'THICCCBOI-Regular', sans-serif;
+  --THICCCBOI-Medium: 'THICCCBOI-Medium', sans-serif;
+  --THICCCBOI-SemiBold: 'THICCCBOI-SemiBold', sans-serif;
+  --THICCCBOI-Bold: 'THICCCBOI-Bold', sans-serif;
+
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-200: hsl(0, 0%, 98%);
+  --neutral-300: hsl(0, 0%, 87%);
+  --neutral-400: hsl(0, 0%, 80%);
+  --neutral-500: hsl(0, 0%, 67%);
+  --neutral-600: hsl(0, 0%, 41%);
+  --neutral-700: hsl(0, 0%, 21%);
+  --neutral-800: hsl(0, 0%, 5%);
+}
+
+* 
+{
+  box-sizing: border-box;
+}
