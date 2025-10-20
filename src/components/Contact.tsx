@@ -7,7 +7,7 @@ function Contact() {
   return (
     <section className="font-(family-name:--THICCCBOI-Medium) py-[160px]">
       <div className="flex flex-col justify-center gap-6 px-[24px] 2xl:max-w-[1216px] 3xl:max-w-[1264px] mx-auto">
-        <h3 className="font-(family-name:--THICCCBOI-SemiBold) text-(--neutral-800) text-[20px] md:text-[26px] 3xl:text-[36px] max-w-[940px] 3xl:max-w-[1064px] -mb-6">Get in touch today</h3>
+        <h3 className="font-(family-name:--THICCCBOI-SemiBold) text-(--neutral-800) text-[20px] md:text-[26px]/9 3xl:text-[36px]/10 max-w-[940px] 3xl:max-w-[1064px] -mb-6">Get in touch today</h3>
 
         <button className="flex gap-2 md:gap-4 items-center cursor-pointer lightenText" onClick={() => window.location.href = 'mailto:yourmail@domain.com'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() =>setIsHovered(false)}>
           <h2 className="text-(--neutral-800) text-[24px]/12 xs:text-[35px]/14 md:text-[60px]/18 3xl:text-[90px]/28 max-w-[940px] 3xl:max-w-[1064px]">hello@sammoore.com</h2>
