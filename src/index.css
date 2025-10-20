@@ -31,7 +31,7 @@
   font-family: 'THICCCBOI-Bold';
   src: url('fonts/THICCCBOI-Bold.woff2') format('woff2'),
       url('fonts/THICCCBOI-Bold.woff') format('woff');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -39,6 +39,10 @@
 
 
 @theme {
+  /* Added breakpoints with min width in px: */
+  /* 480px */
+  --breakpoint-xs: 30rem;
+
 
   /* Default breakpoints in use with min width in px: */
   /* 640px */
@@ -81,4 +85,63 @@
 * 
 {
   box-sizing: border-box;
+}
+
+.lightenText
+{
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.lightenText:hover
+{
+  opacity: 0.6;
+}
+
+.moveFromOriginToTopRight, .moveFromTopRightToOrigin
+{
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.moveFromOriginToTopRight
+{
+  transform: translate(0px, 0px);
+  transform: translate(15%, -15%);
+}
+
+.moveFromTopRightToOrigin
+{
+  transform: translate(15%, -15%);
+  transform: translate(0px, 0px);
+}
+
+.grow, .shrink
+{
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.grow
+{
+  transform-origin: left;
+  transform: scaleX(0);
+  transform: scaleX(1);
+}
+
+.shrink
+{
+  transform-origin: left;
+  transform: scaleX(1);
+  transform: scaleX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .lightenText, .moveFromOriginToTopRight, .moveFromTopRightToOrigin, .grow, .shrink {
+    transition: none;
+  }
 }
