@@ -87,7 +87,8 @@
   box-sizing: border-box;
 }
 
-.lightenText
+/* NOTE: any classes with 'Direct' only work if the element is hovered on. If a state change is needed to simulate a hover, use the 'Indirect' classes */
+.lightenDirect
 {
   opacity: 1;
   transition-property: opacity;
@@ -95,7 +96,7 @@
   transition-timing-function: ease-in-out;
 }
 
-.lightenText:hover
+.lightenDirect:hover
 {
   opacity: 0.6;
 }
@@ -140,8 +141,73 @@
   transform: scaleX(0);
 }
 
+.addOpacityIndirect, .removeOpacityIndirect
+{
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.addOpacityIndirect
+{
+  opacity: 0.6;
+  opacity: 1;
+}
+
+.removeOpacityIndirect
+{
+  opacity: 1;
+  opacity: 0.6;
+}
+
+.scaleDownIndirect, .scaleUpIndirect
+{
+  transition-property: transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+.scaleDownIndirect
+{
+  transform: scale(1);
+  transform: scale(0.98);
+}
+
+.scaleUpIndirect
+{
+  transform: scaleX(0.98);
+  transform: scaleX(1);
+}
+
+.zoomInIndirect, .zoomOutIndirect
+{
+  transition-property: transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+.zoomInIndirect
+{
+  transform: scale(1);
+  transform: scale(1.09);
+}
+
+.zoomOutIndirect
+{
+  transform: scaleX(1.09);
+  transform: scaleX(1);
+}
+
 @media (prefers-reduced-motion) {
-  .lightenText, .moveFromOriginToTopRight, .moveFromTopRightToOrigin, .grow, .shrink {
+  .lightenDirect, .moveFromOriginToTopRight, .moveFromTopRightToOrigin, .grow, .shrink, .addOpacityIndirect, .removeOpacityIndirect, .scaleDownIndirect, .scaleUpIndirect, .zoomInIndirect, .zoomOutIndirect {
     transition: none;
   }
+}
+
+.textDivider
+{
+  margin: 0 10px;
+  background-color: var(--neutral-500);
+  width: 25px;
+  height: 1px;
 }
