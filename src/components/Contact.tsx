@@ -5,7 +5,7 @@ function Contact() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="font-(family-name:--THICCCBOI-Medium) py-[160px]">
+    <section id="contact" className="font-(family-name:--THICCCBOI-Medium) py-[86px] xs:py-[120px] md:py-[160px] 3xl:py-[200px]">
       <div className="flex flex-col justify-center gap-8 px-[24px] max-w-[1216px] 3xl:max-w-[1264px] mx-auto">
         <h3 className="font-(family-name:--THICCCBOI-SemiBold) text-(--neutral-800) text-[20px] leading-[31px] md:text-[26px] md:leading-[34px] 3xl:text-[36px] 3xl:leading-[48px] max-w-[940px] 3xl:max-w-[1064px] -mb-6">Get in touch today</h3>
 

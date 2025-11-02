@@ -92,8 +92,8 @@
 {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
 }
 
 .lightenDirect:hover
@@ -101,11 +101,26 @@
   opacity: 0.6;
 }
 
+/* To change color of links on side menu */
+.darkenText
+{
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+
+.darkenText:hover
+{
+  opacity: 0.4;
+}
+
+/* To move arrow SVGs from their origin to the top right and vice versa */
 .moveFromOriginToTopRight, .moveFromTopRightToOrigin
 {
   transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
 }
 
 .moveFromOriginToTopRight
@@ -120,11 +135,12 @@
   transform: translate(0px, 0px);
 }
 
+/* Grow/Stretch and shrink the horizontal line under certain links */
 .grow, .shrink
 {
   transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
 }
 
 .grow
@@ -141,11 +157,12 @@
   transform: scaleX(0);
 }
 
+/* To lighten the color of text in a list item */
 .addOpacityIndirect, .removeOpacityIndirect
 {
   transition-property: opacity;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
 }
 
 .addOpacityIndirect
@@ -160,11 +177,12 @@
   opacity: 0.6;
 }
 
+/* To make list items bigger or smaller */
 .scaleDownIndirect, .scaleUpIndirect
 {
   transition-property: transform;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
 }
 
 .scaleDownIndirect
@@ -179,11 +197,12 @@
   transform: scaleX(1);
 }
 
+/* To zoom in and out of images found in list items */
 .zoomInIndirect, .zoomOutIndirect
 {
   transition-property: transform;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
 }
 
 .zoomInIndirect
@@ -199,11 +218,12 @@
 }
 
 @media (prefers-reduced-motion) {
-  .lightenDirect, .moveFromOriginToTopRight, .moveFromTopRightToOrigin, .grow, .shrink, .addOpacityIndirect, .removeOpacityIndirect, .scaleDownIndirect, .scaleUpIndirect, .zoomInIndirect, .zoomOutIndirect {
+  .lightenDirect, .moveFromOriginToTopRight, .moveFromTopRightToOrigin, .grow, .shrink, .addOpacityIndirect, .removeOpacityIndirect, .scaleDownIndirect, .scaleUpIndirect, .zoomInIndirect, .zoomOutIndirect, .hamburgerBarFlat, .hamburgerBarTopDiagonal, .hamburgerBarBottomDiagonal, .slide, .darkenText {
     transition: none;
-  }
+  } 
 }
-
+ 
+/* The - between words or phrases */
 .textDivider
 {
   margin: 0 10px;
@@ -212,9 +232,51 @@
   height: 1px;
 }
 
+/* The line between sections */
 .divider
 {
   background-color: var(--neutral-300);
   width: 100%;
   height: 1px;
+}
+
+/* Hamburger menu bar transitions */
+.hamburgerBarFlat, .hamburgerBarTopDiagonal, .hamburgerBarBottomDiagonal
+{
+  transition: transform 0.35s;
+} 
+
+/* Arranges any (top or bottom) menu bar to be horizontal */
+.hamburgerBarHorizontal
+{
+  transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+}
+
+/* Arranges top bar of hamburger menu to go diagonally upwards ex. / */
+.hamburgerBarTopDiagonal
+{
+  transform: translate3d(0px, 7px, 0px) rotateZ(135deg);
+}
+
+/* Arranges bottom bar of hamburger menu to go diagonally downwards ex. \ */
+.hamburgerBarBottomDiagonal
+{
+  transform: translate3d(0px, -7px, 0px) rotateZ(45deg);
+}
+
+/* To slide side menu on and off left side of screen */
+/* Using https://stackoverflow.com/a/63650017 to create transition that does not appear when page loads */
+.slide
+{
+  transition: transform 0.4s ease;
+}
+
+.out
+{
+  transform: translateX(100%);
+}
+
+.in
+{
+  transform: translateX(0);
 }

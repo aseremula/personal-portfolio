@@ -2,7 +2,7 @@ import Link from './Link';
 
 function Header() {
   return (
-    <section className="font-(family-name:--THICCCBOI-Medium) text-center py-[160px]">
+    <header className="font-(family-name:--THICCCBOI-Medium) text-center py-[86px] xs:py-[120px] md:py-[160px] 3xl:py-[200px]">
       <div className="flex flex-col items-center justify-center gap-5 px-[24px] max-w-[1216px] 3xl:max-w-[1264px] mx-auto">
         <img className="rounded-full max-w-[100%] 3xl:w-[240px]" src="./headshot.jpeg" width="180" height="auto" alt="Sam Moore"/>
         <h1 className="text-(--neutral-800) text-[42px] leading-[54px] xs:text-[40px] xs:leading-[52px] md:text-[60px] md:leading-[70px] 3xl:text-[90px] 3xl:leading-[104px] max-w-[940px] 3xl:max-w-[1064px]">I'm Sam, and I am a senior industrial designer</h1>
@@ -14,7 +14,7 @@ function Header() {
           <Link destination="https://www.google.com" text="Go to Google" includeUnderline={false} animateUnderline={false}/> */}
         {/* </div> */}
       </div>
-    </section>
+    </header>
   )
 }
 

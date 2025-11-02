@@ -7,7 +7,7 @@ function Skills() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="font-(family-name:--THICCCBOI-Medium) py-[160px]">
+    <section id="skills" className="font-(family-name:--THICCCBOI-Medium) py-[86px] xs:py-[120px] md:py-[160px] 3xl:py-[200px]">
       <div className="flex flex-col justify-center gap-14 md:gap-16 px-[24px] max-w-[1216px] 3xl:max-w-[1264px] mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 flex-wrap">
           <h2 className="text-(--neutral-800) text-[30px] leading-[42px] xs:text-[42px] xs:leading-[52px] md:text-[48px] md:leading-[64px] 3xl:text-[72px] 3xl:leading-[86px] max-w-[940px] 3xl:max-w-[1064px]">My work skills</h2>
