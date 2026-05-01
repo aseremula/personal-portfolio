@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'THICCCBOI-Regular';
-  src: url('fonts/THICCCBOI-Regular.woff2') format('woff2'),
-      url('fonts/THICCCBOI-Regular.woff') format('woff');
+  src: url('../public/fonts/THICCCBOI-Regular.woff2') format('woff2'),
+      url('../public/fonts/THICCCBOI-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'THICCCBOI-Medium';
-  src: url('fonts/THICCCBOI-Medium.woff2') format('woff2'),
-      url('fonts/THICCCBOI-Medium.woff') format('woff');
+  src: url('../public/fonts/THICCCBOI-Medium.woff2') format('woff2'),
+      url('../public/fonts/THICCCBOI-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
   font-family: 'THICCCBOI-SemiBold';
-  src: url('fonts/THICCCBOI-SemiBold.woff2') format('woff2'),
-      url('fonts/THICCCBOI-SemiBold.woff') format('woff');
+  src: url('../public/fonts/THICCCBOI-SemiBold.woff2') format('woff2'),
+      url('../public/fonts/THICCCBOI-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: 'THICCCBOI-Bold';
-  src: url('fonts/THICCCBOI-Bold.woff2') format('woff2'),
-      url('fonts/THICCCBOI-Bold.woff') format('woff');
+  src: url('../public/fonts/THICCCBOI-Bold.woff2') format('woff2'),
+      url('../public/fonts/THICCCBOI-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -284,7 +284,7 @@
 /* For site to fade-in once loaded on user's browser */
 .appear {
   animation-name: appear;
-  animation-duration: 0.40s;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-timing-function: ease;
@@ -295,11 +295,13 @@
   0%
   {
     opacity: 0;
+    transform: translateY(20px);
   }
 
   100%
   {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
