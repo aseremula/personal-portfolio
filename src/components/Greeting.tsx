@@ -10,7 +10,7 @@ function Greeting() {
             <p className="text-(--neutral-600) text-[18px] leading-[30px] md:text-[22px] md:leading-[36px] 3xl:max-w-[590px] 3xl:text-[24px] 3xl:leading-[42px]">Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labor.</p>
           </div>
 
-          <img className="max-w-[100%]" src="./greetings.jpeg" width="auto" height="auto" alt="Sam Moore"/>          
+          <img className="max-w-[100%]" src="./half_body_portrait.jpeg" width="auto" height="auto" alt="Sam Moore"/>          
         </div>
       </div>
     </section>

@@ -1,5 +1,3 @@
-import Link from './Link';
-
 function Footer() {
   return (
     // TODO: Redo copyright/created by line
@@ -7,9 +5,10 @@ function Footer() {
       <div className="border-t-1 border-t-(--neutral-300) grid grid-cols-[1.2fr] md:grid-cols-[1.2fr_0.6fr] items-center gap-y-[22px] md:gap-y-[16px] gap-x-[16px] mt-[30px] pt-[32px]">
         <p className="text-(--neutral-600) text-[18px] 3xl:text-[20px] leading-[30px] 3xl:leading-[36px]">
           {/* Created by Sam Moore | Design by&nbsp; */}
-          Copyright c Webfolio X | Designed by&nbsp;
+          Copyright © Webfolio X | Designed by&nbsp;
           <a className="text-(--neutral-800) underline" href="https://brixtemplates.com/" target="_blank" rel="noopener noreferrer">BRIX Templates</a>
-          &nbsp;Powered By Webflow
+          &nbsp;- Powered by&nbsp;
+          <a className="text-(--neutral-800) underline" href="https://webflow.com/" target="_blank" rel="noopener noreferrer">Webflow</a>
         </p>
 
         {/* TODO: change links and arias */}

@@ -1,73 +1,19 @@
-# React + TypeScript + Vite
+# Personal Website & Portfolio
+This project is a part of [The Odin Project's JS Getting Hired course](https://www.theodinproject.com/lessons/node-path-getting-hired-building-your-personal-website#introduction)
+> [Live Demo]()
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# About
+This frontend project is a personal website and portfolio, serving as a direct conduit for someone to showcase their work. The simple, clean, and responsive design featured thoughout the site is heavily inspired by [Webflow's Portfolio X template & UI kit](https://webflow.com/templates/html/portfolio-x-portfolio-website-template). With 3 main sections showcasing projects, skills, and contact info, the portfolio is designed to get to the point and let a person's work speak for itself!
 
-Currently, two official plugins are available:
+# Built With
+- HTML
+- CSS & TailwindCSS
+- TypeScript
+- npm
+- React
+- Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Additional Credits
+- [Wonder Unit](https://github.com/wonderunit) for [Thicccboi](https://github.com/wonderunit/font-thicccboi), an open-source font!
+- [Mathilde Langevin](https://unsplash.com/@mathildelangevin) for the stock portrait images!
+- [Webflow](https://webflow.com/) for the stock project images!

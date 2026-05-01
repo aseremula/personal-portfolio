@@ -280,3 +280,31 @@
 {
   transform: translateX(0);
 }
+
+/* For site to fade-in once loaded on user's browser */
+.appear {
+  animation-name: appear;
+  animation-duration: 0.40s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+
+@keyframes appear
+{
+  0%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .appear {
+    animation: none;
+  }
+}

@@ -1,5 +1,3 @@
-import Link from './Link';
-
 function Divider() {
   return (
     // <div className="font-(family-name:--THICCCBOI-Medium)">

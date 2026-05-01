@@ -1,5 +1,3 @@
-import Link from './Link';
-
 function Header() {
   return (
     <header className="font-(family-name:--THICCCBOI-Medium) text-center py-[86px] xs:py-[120px] md:py-[160px] 3xl:py-[200px]">

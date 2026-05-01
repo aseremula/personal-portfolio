@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <div id="home" className="relative">
+    <div id="home" className="relative appear">
       <Navigation/>
       <Header/>
       <Divider/>
