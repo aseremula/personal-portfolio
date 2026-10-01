@@ -13,6 +13,9 @@ This frontend project is a personal website and portfolio, serving as a direct c
 - React
 - Vite
 
+# Features
+- 2 different contact components: the first shares an email address while the second uses a contact form! For demo purposes, the first version of the contact component is displayed.
+
 # Additional Credits
 - [Wonder Unit](https://github.com/wonderunit) for [Thicccboi](https://github.com/wonderunit/font-thicccboi), an open-source font!
 - [Mathilde Langevin](https://unsplash.com/@mathildelangevin) for the stock portrait images!

@@ -1,11 +1,13 @@
+// This is one version of a contact component that serves as a call to action via displaying the user's email address and social media handles. The call to action requires the client to open their email and write a message, allowing the user to control the personalization, timing, and follow-up of future communications with the client. Due to bots and automated web scrapers, this design may be risky because the exposed email address may cause spam emails, email spoofing, or other malicious activities. It may also cause friction because it relies on the client putting more effort into reaching out. If using this component, be sure to obfuscate the email to mitigate spam!
+ 
 import { useState } from 'react';
 import Link from './Link';
 
-function Contact() {
+function ContactEmail() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section id="contact" className="font-(family-name:--THICCCBOI-Medium) py-[86px] xs:py-[120px] md:py-[160px] 3xl:py-[200px]">
+    <section id="contactEmail" className="font-(family-name:--THICCCBOI-Medium) py-[86px] xs:py-[120px] md:py-[160px] 3xl:py-[200px]">
       <div className="flex flex-col justify-center gap-8 px-[24px] max-w-[1216px] 3xl:max-w-[1264px] mx-auto">
         <h3 className="font-(family-name:--THICCCBOI-SemiBold) text-(--neutral-800) text-[20px] leading-[31px] md:text-[26px] md:leading-[34px] 3xl:text-[36px] 3xl:leading-[48px] max-w-[940px] 3xl:max-w-[1064px] -mb-6">Get in touch today</h3>
 
@@ -29,4 +31,4 @@ function Contact() {
   )
 }
 
-export default Contact;
+export default ContactEmail;

@@ -43,7 +43,7 @@ function Navigation() {
           <ul className="text-(--neutral-800) flex gap-[32px] text-[18px] leading-[20px]">
             <li className="lightenDirect"><a href="#projects">Projects</a></li>
             <li className="lightenDirect"><a href="#skills">Skills</a></li>
-            <li className="lightenDirect"><a href="#contact">Contact</a></li>
+            <li className="lightenDirect"><a href="#contactEmail">Contact</a></li>
           </ul>
         :
           // Close side menu if user clicks outside of either the menu or X button by setting multiple refs

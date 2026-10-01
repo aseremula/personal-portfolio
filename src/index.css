@@ -36,8 +36,6 @@
   font-display: swap;
 }
 
-
-
 @theme {
   /* Added breakpoints with min width in px: */
   /* 480px */
@@ -50,6 +48,9 @@
 
   /* 768px */
   --breakpoint-md: 48rem;
+
+  /* 992px - mediumish: this breakpoint is currently only used for the ContactForm component */
+  --breakpoint-mdish: 62rem;
 
   /* 1024px */
   --breakpoint-lg: 64rem;
@@ -80,6 +81,9 @@
   --neutral-600: hsl(0, 0%, 41%);
   --neutral-700: hsl(0, 0%, 21%);
   --neutral-800: hsl(0, 0%, 5%);
+
+  --error-bg: hsl(0, 100%, 95%);
+  --error-text: hsl(0, 100%, 68%);
 }
 
 * 
@@ -218,7 +222,7 @@
 }
 
 @media (prefers-reduced-motion) {
-  .lightenDirect, .moveFromOriginToTopRight, .moveFromTopRightToOrigin, .grow, .shrink, .addOpacityIndirect, .removeOpacityIndirect, .scaleDownIndirect, .scaleUpIndirect, .zoomInIndirect, .zoomOutIndirect, .hamburgerBarFlat, .hamburgerBarTopDiagonal, .hamburgerBarBottomDiagonal, .slide, .darkenText {
+  .lightenDirect, .moveFromOriginToTopRight, .moveFromTopRightToOrigin, .grow, .shrink, .addOpacityIndirect, .removeOpacityIndirect, .scaleDownIndirect, .scaleUpIndirect, .zoomInIndirect, .zoomOutIndirect, .hamburgerBarFlat, .hamburgerBarTopDiagonal, .hamburgerBarBottomDiagonal, .slide, .darkenText, .darkenBottomBorderDirect, .textColorDarken_700To800 {
     transition: none;
   } 
 }
@@ -309,4 +313,59 @@
   .appear {
     animation: none;
   }
+}
+
+/* Hide visually, but still appear in DOM for a11y */
+.aria-invisible 
+{
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px;  
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Outline around elements when pressing the Tab key */
+*:focus-visible {
+  outline: 2px solid var(--neutral-800);
+  border-radius: 2%;
+}
+
+input:focus-visible, textarea:focus-visible {
+  outline: 2px solid transparent;
+  border-bottom-color: var(--neutral-800);
+}
+
+/* Remove autocomplete/autofill styling */
+input:is(:-webkit-autofill, :autofill) {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+
+.darkenBottomBorderDirect
+{
+  border-bottom-color: var(--neutral-500);
+  transition-property: border-bottom-color;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+
+.darkenBottomBorderDirect:hover
+{
+  border-bottom-color: var(--neutral-800);
+}
+
+.textColorDarken_700To800
+{
+  color: var(--neutral-700);
+  transition-property: color;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+
+.textColorDarken_700To800:hover
+{
+  color: var(--neutral-800);
 }
